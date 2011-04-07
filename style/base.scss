@@ -28,6 +28,11 @@ a {
   }
 }
 
+.clear {
+  float: none;
+  clear: both;
+}
+
 #top-navigation {
   width: $width;
   padding-top: $padding / 2;

@@ -34,12 +34,13 @@ body {
     }
   }
   
-  h2 {
-    margin: $padding $padding $padding ($side-panel-width + $padding);
-    color: $dark-text;
-  }
   .page-content {
     margin: $padding $padding $padding ($side-panel-width + $padding);
+    
+    h2 {
+      margin: 3*$padding 0 $padding 0;
+      color: $dark-text;
+    }
     p {
       line-height: 1.4em;
     }
@@ -47,23 +48,32 @@ body {
       margin: $padding;
       li {
         margin: 1.5% 1.5%;
-        width: 29%;
-        @include vertical-background-gradient(#fff, #eee);
-        border: 2px solid desaturate(lighten($inovex-blue, 60%), 50%);
-        @include border-radius(10px, 10px, 10px, 10px);
         float: left;
-        h3 {
+        
+        width: 29%;        
+        display: block;
+        img {
+          @include border-radius(10px, 10px, 10px, 10px);
+        }
+        p {
+          margin: $padding;
+        }
+        a {
+          
+          @include border-radius(10px, 10px, 10px, 10px);
+          @include vertical-background-gradient(#fff, #eee);
+          border: 2px solid desaturate(lighten($inovex-blue, 60%), 50%);
+          display: block;
           color: desaturate(lighten($inovex-blue, 40%), 50%);
-          font-size: 40px;
+          font-size: 30px;
+          height: 50px;
+          line-height: 50px;
           text-align: center;
-          height: 200px;
-          line-height: 200px;
           vertical-align: center;
         }
         &:hover {
-          border-color: $inovex-orange;
           cursor: pointer;
-          h3 {
+          a {
             color: $inovex-orange;
           }
         }
