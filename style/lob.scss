@@ -1,8 +1,10 @@
 @import "base";
 
+$background-from: desaturate(lighten($inovex-blue,70%), 50%);
+$background-to: desaturate(lighten($inovex-blue, 75%), 50%);
+
 body {
-  @include vertical-background-gradient(desaturate(lighten($inovex-blue,70%), 50%),
-                                        desaturate(lighten($inovex-blue, 75%), 50%));
+  @include vertical-background-gradient($background-from, $background-to);
 }
 
 .boundary {
@@ -10,9 +12,12 @@ body {
   margin: 0px auto;
   $side-panel-width: $width / 5;
   .side-panel {
-    width: $side-panel-width;
+    width: $side-panel-width - $padding * 2;
     margin: $padding 0;
     float: left;
+    @include border-radius(5px, 5px, 5px, 5px);
+    @include vertical-background-gradient($background-to, $background-from);
+    
     li {
       margin: $padding;
       list-style-type: square;
