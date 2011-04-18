@@ -34,3 +34,10 @@ a {
         text-transform: uppercase; }
       #top-navigation ul li.first {
         border: none; }
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e1e7f2), to(#f3f5fa)); }
+
+.boundary {
+  width: 1000px;
+  margin: 0px auto; }

@@ -18,6 +18,7 @@ $dark-text: #333;
 $inovex-blue: #052B69;
 $inovex-orange: #F60;
 $inovex-logo: "/images/inovex_logo_square.png";
+$inovex-blue-border: desaturate(lighten($inovex-blue, 50%), 50%);
 
 a {
   color: $normal-text;

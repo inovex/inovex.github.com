@@ -25,3 +25,9 @@
   margin-left: -9999em;
   overflow: hidden;
 }
+
+@mixin shadow-hack() {
+  // go to off to render shadow correctly
+  width: 102%;
+  margin-left: -1%;
+}

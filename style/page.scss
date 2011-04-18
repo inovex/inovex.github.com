@@ -1,0 +1,13 @@
+@import "base";
+
+$background-from: desaturate(lighten($inovex-blue,70%), 50%);
+$background-to: desaturate(lighten($inovex-blue, 75%), 50%);
+
+body {
+  @include vertical-background-gradient($background-from, $background-to);
+}
+
+.boundary {
+  width: $width;
+  margin: 0px auto;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>{{ site.title }} - {{ page.title }}</title>
+    {% include header-meta.html %}
+    <link rel="stylesheet" type="text/css" href="/stylesheets/single.css" />
+    <script type="text/javascript" charset="utf-8" src="/javascripts/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/javascripts/jquery-scrollto.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/javascripts/pages.js"></script>
+  </head>
+  <body>
+    <div class="boundary">
+      <div id="side">
+        <a id="logo" href="/">
+          <span>Zur&uuml;ck zur Startseite</span>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>

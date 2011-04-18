@@ -1,15 +1,6 @@
-@import "base";
-
-$background-from: desaturate(lighten($inovex-blue,70%), 50%);
-$background-to: desaturate(lighten($inovex-blue, 75%), 50%);
-
-body {
-  @include vertical-background-gradient($background-from, $background-to);
-}
+@import "page";
 
 .boundary {
-  width: $width;
-  margin: 0px auto;
   $side-panel-width: $width / 5;
   .side-panel {
     width: $side-panel-width - $padding * 2;
@@ -90,14 +81,12 @@ $header-height: $main-navigation-top + $main-navigation-height +
 
 #header {
   position: fixed;
-  // go to off to render shadow correctly
-  width: 102%;
-  margin-left: -1%;
+  @include shadow-hack();
   height: $header-height;
   @include vertical-background-gradient(darken($inovex-blue, 5%), 
                                         lighten($inovex-blue, 5%));
   @include box-shadow(0 0 20px #ccc);
-  border-bottom: 2px solid desaturate(lighten($inovex-blue, 50%), 50%);
+  border-bottom: 2px solid $inovex-blue-border;
 
   #logo {
     position: absolute;

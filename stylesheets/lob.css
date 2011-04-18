@@ -12,6 +12,10 @@ a {
   a:hover {
     color: #052b69; }
 
+.clear {
+  float: none;
+  clear: both; }
+
 #top-navigation {
   width: 1000px;
   padding-top: 4px;
@@ -37,49 +41,57 @@ body {
 .boundary {
   width: 1000px;
   margin: 0px auto; }
-  .boundary .side-panel {
-    width: 200px;
-    margin: 8px 0;
-    float: left; }
-    .boundary .side-panel li {
-      margin: 8px;
-      list-style-type: square;
-      list-style-position: inside;
-      color: #7593c5; }
-      .boundary .side-panel li a {
-        color: #052b69;
-        text-shadow: #fff 1px 1px;
-        display: inline-block; }
-        .boundary .side-panel li a:hover {
-          text-decoration: underline; }
-  .boundary h2 {
-    margin: 8px 8px 8px 208px;
+
+.boundary .side-panel {
+  width: 184px;
+  margin: 8px 0;
+  float: left;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f5fa), to(#e1e7f2)); }
+  .boundary .side-panel li {
+    margin: 8px;
+    list-style-type: square;
+    list-style-position: inside;
+    color: #7593c5; }
+    .boundary .side-panel li a {
+      color: #052b69;
+      text-shadow: #fff 1px 1px;
+      display: inline-block; }
+      .boundary .side-panel li a:hover {
+        text-decoration: underline; }
+.boundary .page-content {
+  margin: 8px 8px 8px 208px; }
+  .boundary .page-content h2 {
+    margin: 24px 0 8px 0;
     color: #333333; }
-  .boundary .page-content {
-    margin: 8px 8px 8px 208px; }
-    .boundary .page-content p {
-      line-height: 1.4em; }
-    .boundary .page-content .boxed {
-      margin: 8px; }
-      .boundary .page-content .boxed li {
-        margin: 1.5% 1.5%;
-        width: 29%;
+  .boundary .page-content p {
+    line-height: 1.4em; }
+  .boundary .page-content .boxed {
+    margin: 8px; }
+    .boundary .page-content .boxed li {
+      margin: 1.5% 1.5%;
+      float: left;
+      width: 29%;
+      display: block; }
+      .boundary .page-content .boxed li img {
+        -webkit-border-radius: 10px 10px 10px 10px; }
+      .boundary .page-content .boxed li p {
+        margin: 8px; }
+      .boundary .page-content .boxed li a {
+        -webkit-border-radius: 10px 10px 10px 10px;
         background: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
         border: 2px solid #bdcbe3;
-        -webkit-border-radius: 10px 10px 10px 10px;
-        float: left; }
-        .boundary .page-content .boxed li h3 {
-          color: #7593c5;
-          font-size: 40px;
-          text-align: center;
-          height: 200px;
-          line-height: 200px;
-          vertical-align: center; }
-        .boundary .page-content .boxed li:hover {
-          border-color: #ff6600;
-          cursor: pointer; }
-          .boundary .page-content .boxed li:hover h3 {
-            color: #ff6600; }
+        display: block;
+        color: #7593c5;
+        font-size: 30px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        vertical-align: center; }
+      .boundary .page-content .boxed li:hover {
+        cursor: pointer; }
+        .boundary .page-content .boxed li:hover a {
+          color: #ff6600; }
 
 #header {
   position: fixed;

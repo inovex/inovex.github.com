@@ -1,0 +1,55 @@
+@import "page";
+
+$side-width: 200px;
+
+body {
+}
+
+#side {
+  position: fixed;
+  width: $side-width;
+  #logo {
+    margin-top: -$padding;
+    width: $side-width;
+    height: $side-width;
+    display: block;
+    background: white;
+    @include border-radius(0, 0, $padding, $padding);
+    background: white url($inovex-logo) center no-repeat;
+    border: {
+      width: 0 1px 1px 1px;
+      color: #999;
+      style: solid;
+    };
+    @include box-shadow(0 3px $padding white);
+    
+    span {
+      display: none;
+    }
+  }
+}
+
+$page-padding: $padding * 3;
+#pages {
+  overflow-x: hidden; // page hack
+  .page {
+    padding-top: $page-padding;
+    height: 500px;
+    .boundary {
+      $boundary-padding: $side-width + $page-padding;
+      padding-left: $boundary-padding;
+      width: $width - $boundary-padding;
+    }
+    
+    &.with-background {
+      @include shadow-hack;
+      @include box-shadow(0 0px $padding #999);
+      border: {
+        width: 2px 0 2px 0;
+        style: solid;
+        color: $inovex-blue-border;
+      };
+      background: white;
+    }
+  }
+}

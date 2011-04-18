@@ -12,6 +12,10 @@ a {
   a:hover {
     color: #052b69; }
 
+.clear {
+  float: none;
+  clear: both; }
+
 #top-navigation {
   width: 1000px;
   padding-top: 4px;

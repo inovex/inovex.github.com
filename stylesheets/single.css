@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica"; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #777777;
+  text-decoration: none; }
+  a:hover {
+    color: #052b69; }
+
+.clear {
+  float: none;
+  clear: both; }
+
+#top-navigation {
+  width: 1000px;
+  padding-top: 4px;
+  margin: 0px auto;
+  text-align: right; }
+  #top-navigation ul {
+    display: inline; }
+    #top-navigation ul li {
+      display: inline;
+      padding-left: 8px;
+      padding-right: 4px;
+      border-left: 1px dotted #ddd; }
+      #top-navigation ul li a {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      #top-navigation ul li.first {
+        border: none; }
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e1e7f2), to(#f3f5fa)); }
+
+.boundary {
+  width: 1000px;
+  margin: 0px auto; }
+
+#side {
+  position: fixed;
+  width: 200px; }
+  #side #logo {
+    margin-top: -8px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: white;
+    -webkit-border-radius: 0 0 8px 8px;
+    background: white url("/images/inovex_logo_square.png") center no-repeat;
+    border-width: 0 1px 1px 1px;
+    border-color: #999;
+    border-style: solid;
+    -webkit-box-shadow: 0 3px 8px white; }
+    #side #logo span {
+      display: none; }
+
+#pages {
+  overflow-x: hidden; }
+  #pages .page {
+    padding-top: 24px;
+    height: 500px; }
+    #pages .page .boundary {
+      padding-left: 224px;
+      width: 776px; }
+    #pages .page.with-background {
+      width: 102%;
+      margin-left: -1%;
+      -webkit-box-shadow: 0 0px 8px #999999;
+      border-width: 2px 0 2px 0;
+      border-style: solid;
+      border-color: #99afd4;
+      background: white; }
