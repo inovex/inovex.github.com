@@ -35,10 +35,12 @@ $page-padding: $padding * 3;
   .page {
     padding-top: $page-padding;
     height: 500px;
+    
+    $boundary-padding: $side-width + $page-padding;
+    $boundary-width: $width - $boundary-padding;
     .boundary {
-      $boundary-padding: $side-width + $page-padding;
       padding-left: $boundary-padding;
-      width: $width - $boundary-padding;
+      width: $boundary-width;
     }
     
     &.with-background {
@@ -50,6 +52,31 @@ $page-padding: $padding * 3;
         color: $inovex-blue-border;
       };
       background: white;
+    }
+    
+    div.infos {
+      clear: both;
+      
+      h2 {
+        margin-top: $padding;
+      }
+      
+      h3 {
+        color: $inovex-blue;
+      }
+      
+      p {
+        font-size: 13px;
+      }
+      
+      div.info {
+        float: left;
+        margin-top: $padding * 2;
+        margin-bottom: $padding * 2;
+        margin-right: $padding * 2;
+        width: ($boundary-width / 2) - $padding * 2;
+        font-size: 13px;
+      }
     }
   }
 }
